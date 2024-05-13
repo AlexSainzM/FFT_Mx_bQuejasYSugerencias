@@ -32,3 +32,8 @@
   color: white;
   transition: 0.7s;
 }
+ 
+.form-check-input:checked {
+  background-color:#009D7E;
+  border-color: #009D7E;
+}
