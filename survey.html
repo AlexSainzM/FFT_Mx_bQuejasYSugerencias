@@ -63,7 +63,7 @@
           <div class="accordion-item">
             <h4 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Accordion Item #1
+                Tipo de reporte
               </button>
             </h4>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -73,11 +73,11 @@
 
                     <div class="my-3">
                         <div class="form-check">
-                          <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                          <input id="credit" name="tipoReporte" type="radio" class="form-check-input" checked required>
                           <label class="form-check-label" for="credit">Queja</label>
                         </div>
                         <div class="form-check">
-                          <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                          <input id="debit" name="tipoReporte" type="radio" class="form-check-input" required>
                           <label class="form-check-label" for="debit">Reclamación</label>
                         </div>
                     </div>
@@ -106,11 +106,11 @@
                     <div class="my-3">
                         <div class="form-check">
                           <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                          <label class="form-check-label" for="credit">Queja</label>
+                          <label class="form-check-label" for="credit">Si</label>
                         </div>
                         <div class="form-check">
                           <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
-                          <label class="form-check-label" for="debit">Reclamación</label>
+                          <label class="form-check-label" for="debit">No</label>
                         </div>
                     </div>
                 </div>
@@ -121,13 +121,53 @@
         <div class="accordion-item">
             <h4 class="accordion-header" id="headingTwo">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Accordion Item #2
+                Datos de la persona que presenta la queja o reclamación.
               </button>
             </h4>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+                <div class="accordion-body">
+                
+                    <h4 class="mb-3">Datos de la persona que presenta la queja o reclamación.</h4>
+            
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                        <label for="cc-name" class="form-label">Name on card</label>
+                        <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                        <small class="text-muted">Full name as displayed on card</small>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                        <label for="cc-number" class="form-label">Credit card number</label>
+                        <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                        <label for="cc-expiration" class="form-label">Expiration</label>
+                        <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Expiration date required
+                        </div>
+                        </div>
+            
+                        <div class="col-md-3">
+                        <label for="cc-cvv" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Security code required
+                        </div>
+                        </div>
+                    </div>
+            
+                    <hr class="my-4">
+            
+                    <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                </div>
             </div>
         </div>
         
