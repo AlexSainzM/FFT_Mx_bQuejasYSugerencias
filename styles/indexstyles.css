@@ -37,3 +37,10 @@
   background-color:#009D7E;
   border-color: #009D7E;
 }
+
+#miembrosComiteInv {
+  color: #009D7E;
+  border-color: #009D7E;
+  border-width: 4px;
+  background-color: white;
+}
